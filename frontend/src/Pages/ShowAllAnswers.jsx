@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -58,7 +59,7 @@ export const ShowAllAnswers = () => {
       </div>
       <div className=" w-36  border-2 p-1 pl-2 text-center  pr-2 bg-teal-400  finalresult ">
         <Link to="/result">
-      <span>Click to get</span>    <button className="text-xl  font-bold"> Final Marks</button>
+      <span></span>    <button className="text-xl  font-bold"> Final Marks</button>
         </Link>
       </div>
     </div>

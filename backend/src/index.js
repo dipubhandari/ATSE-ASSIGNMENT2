@@ -1,7 +1,7 @@
 const express=require('express');
 const connect=require("./configs/db.js")
 const bodyParser = require("body-parser");
-const Port = process.env.PORT || 3755
+const Port = process.env.PORT || 5000
 var cors = require('cors')
 const app=express();
 app.use(express.json());
@@ -28,10 +28,10 @@ app.use("/user",user)
 const userResult=require("./controller/userData.controller.js")
 app.use("/userResult",userResult)
 
-app.listen(Port,async function(){
+app.listen(5000,async function(){
     try {
         await connect();
-           console.log(`Listening on ${Port}` )
+           console.log(`Server running on ${Port}` )
     } catch (error) {
          console.log(err)
     }

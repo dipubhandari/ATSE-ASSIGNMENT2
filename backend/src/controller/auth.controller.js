@@ -3,6 +3,7 @@ const router = express.Router()
 const User=require("../model/auth.model.js")
 
 router.post('/login', (req, res) => {
+  console.log("this works");
     const {  email, password } = req.body
        User.findOne({email:email},(err,user)=>{
            if(user){
@@ -18,6 +19,7 @@ router.post('/login', (req, res) => {
        })
 })
 router.post('/register', (req, res) => {
+  console.log("this works");
   const { name, email, password } = req.body
   User.findOne({ email: email }, (err, user) => {
     if (user) {

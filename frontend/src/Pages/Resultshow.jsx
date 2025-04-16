@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
+//component
 export const Resultshow = () => {
   let [count, setCount] = useState(0);
   let [feedback, setFeedback] = useState("");

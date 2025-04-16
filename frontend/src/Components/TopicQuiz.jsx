@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
@@ -126,6 +128,7 @@ export const TopicQuiz = () => {
           </Link>
         ) : (
           <Link to="/register">
+            {/* vorder */}
             {" "}
             <div className="border-2 cursor-pointer topicdiv text-white font-sans text-4xl font-bold  h-36 justify-items-center rounded-2xl pl-10 flex ">
               <div className="w-3/5 h-full bg-rgb(27,169,76)">

@@ -31,6 +31,7 @@ export const Register = () => {
           toast("Invalid Input", {
             type: "error",
           });
+          console.log(err)
         });
     } else {
       toast("Invalid Input", {

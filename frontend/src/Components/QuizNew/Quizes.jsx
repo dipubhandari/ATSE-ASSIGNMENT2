@@ -13,6 +13,7 @@ export const Quizes = () => {
   const questionArr = singleQuiz[0]?.questionArray;
   useEffect(() => {
     dispatch(getQuiz(params));
+    console.log(singleQuiz);
   }, []);
 
   useEffect(() => {
