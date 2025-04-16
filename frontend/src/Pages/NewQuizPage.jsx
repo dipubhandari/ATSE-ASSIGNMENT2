@@ -61,6 +61,7 @@ export const NewQuizPage = () => {
                       <p className="text-xl font-normal  ">{el.que}</p>
                     </div>
                   </div>
+                  {/* map for anaswer */}
                   {el?.answer[0]?.map((e, index) => {
                     return (
                       <div className="flex ml-32">

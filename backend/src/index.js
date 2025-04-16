@@ -28,7 +28,7 @@ app.use("/user",user)
 const userResult=require("./controller/userData.controller.js")
 app.use("/userResult",userResult)
 
-app.listen(5000,async function(){
+app.listen(Port,async function(){
     try {
         await connect();
            console.log(`Server running on ${Port}` )
