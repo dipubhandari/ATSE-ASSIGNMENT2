@@ -1,4 +1,6 @@
 
+
+
 const express=require("express")
 const User = require("../model/auth.model.js")
 const router =express.Router()
